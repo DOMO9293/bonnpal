@@ -4,9 +4,9 @@ import styled from "styled-components";
 function Titlebar() {
   return (
     <StyledTitlebar>
-      <Avatar source={require("../../assets/prifil.png")} />
       <Text>Grocery</Text>
       <Name>DANBI</Name>
+      <Avatar source={require("../../assets/prifil.png")} />
     </StyledTitlebar>
   );
 }
@@ -20,7 +20,7 @@ const Container = styled.View`
 const StyledTitlebar = styled.View`
   width: 100%;
   margin-top: 50px;
-  padding-left: 80px;
+  padding-left: 0px;
 `;
 
 const Text = styled.Text`
@@ -40,9 +40,9 @@ const Avatar = styled.Image`
   width: 55px;
   height: 55px;
   border-radius: 22px;
-  margin-left: 20px;
+  margin-left: 00px;
 
   position: absolute;
   top: 0;
-  left: 0;
+  left: 320;
 `;

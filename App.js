@@ -5,10 +5,10 @@ import { ThemeProvider } from "styled-components/native";
 import styles from "./styles";
 import Button from "./components/global/buttons";
 import Titlebar from "./components/global/Titlebar";
+import Home from "./paeges/Home";
 
 const Container = styled.View`
-  flex: 1;
-
+  height: 100%;
   background-color: ${({ theme }) => theme.whiteColor};
 `;
 const MainText = styled.Text`
@@ -22,10 +22,7 @@ export default function App() {
     <ThemeProvider theme={styles}>
       <Container>
         <Titlebar />
-        <MainText>Hello world</MainText>
-        <Button textColor="blackColor" backgroundColor="mainColor">
-          DANBI
-        </Button>
+        <Home />
       </Container>
     </ThemeProvider>
   );
