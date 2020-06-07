@@ -20,7 +20,7 @@ const Container = styled.View`
   border-radius: 15px;
   margin: 30px;
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   align-items: center;
   text-align: center;
   shadow-color: #000;

@@ -42,6 +42,7 @@ const Text = styled.Text`
   font-weight: bold;
   color: ${({ theme }) => theme.blackColor};
 `;
+
 const Avatar = styled.Image`
   width: 40px;
   height: 40px;

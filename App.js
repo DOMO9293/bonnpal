@@ -6,6 +6,7 @@ import styles from "./styles";
 import Button from "./components/global/buttons";
 import Titlebar from "./components/global/Titlebar";
 import Home from "./paeges/Home";
+import Bonn from "./paeges/Bonn";
 
 const Container = styled.View`
   height: 100%;
@@ -22,7 +23,7 @@ export default function App() {
     <ThemeProvider theme={styles}>
       <Container>
         <Titlebar />
-        <Home />
+        <Bonn />
       </Container>
     </ThemeProvider>
   );

@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text } from "react-native";
 import styled from "styled-components";
 import TodoEl from "./TodoEl";
+import { Ionicons } from "@expo/vector-icons";
 
 const Todo = () => {
   return (
@@ -9,6 +10,7 @@ const Todo = () => {
       <Title>Shopping List</Title>
       <TodoEl />
       <TodoEl />
+
       <ViewMore>View more...</ViewMore>
     </Container>
   );
@@ -23,7 +25,7 @@ const Container = styled.View`
   border-radius: 15px;
   margin: 30px;
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   text-align: center;
   shadow-color: #000;
   shadow-offset: {width: 0, height: 2};
