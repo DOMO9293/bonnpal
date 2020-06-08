@@ -31,5 +31,4 @@ const Container = styled(ScrollView)`
   height: 77%;
   width: 390px;
   margin-top: 5px;
-  overflow: scroll;
 `;
