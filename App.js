@@ -8,6 +8,8 @@ import Titlebar from "./components/global/Titlebar";
 import Home from "./paeges/Home";
 import Bonn from "./paeges/Bonn";
 import BonnDetail from "./paeges/BonnDetail";
+import { Provider } from "react-redux";
+import store from "./redux/store";
 
 const Container = styled.View`
   height: 100%;
@@ -21,12 +23,14 @@ const MainText = styled.Text`
 
 export default function App() {
   return (
-    <ThemeProvider theme={styles}>
-      <Container>
-        <Titlebar />
-        <BonnDetail />
-      </Container>
-    </ThemeProvider>
+    <Provider store={store}>
+      <ThemeProvider theme={styles}>
+        <Container>
+          <Titlebar />
+          <BonnDetail />
+        </Container>
+      </ThemeProvider>
+    </Provider>
   );
 }
 
