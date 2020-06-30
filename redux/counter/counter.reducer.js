@@ -4,7 +4,7 @@ const INITAIL_STATE = {
   counter: 0,
 };
 
-export default counterReducer = (state = INITAIL_STATE, action) => {
+export const counterReducer = (state = INITAIL_STATE, action) => {
   switch (action.type) {
     case counterActionTypes.INCREASE_COUNTER:
       return {
